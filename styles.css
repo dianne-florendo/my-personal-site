@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #ddd0c8;
+    background-color: #d6c5b3;
     color: #323232;
 }
 header {
@@ -10,14 +10,17 @@ header {
 }
 header nav ul {
     display: flex;
-    margin-left: 30%;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
     list-style: none;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 header nav ul li {
     padding: 5%;
 }
-header a {
+header a { 
     text-decoration: none;
     color: #323232;
 }
@@ -32,12 +35,158 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 300px;
     width: 50%;
     border-radius: 50%;
 }
 .intro-container h1 {
     margin-top: 2%;
-    font-size: 3em;
+    text-align: center;
+    font-size: 5em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#about {
+    background-image: url(images/about-me-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.about-container h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4em;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.about-container p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+.corevalues-container h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4em;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.corevalues-container h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+.corevalues-container p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.whereilive-container h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4em;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.whereilive-container h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+.whereilive-container p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.interests-container h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4em;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.interests-container h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+.interests-container p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+#contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-container h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4em;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.contact-container p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+section div .form-container {
+    justify-content: center;
+    width: 90%;
+}
+section div form .name-input {
+    background-color: #fff3de;
+    border: 2px solid #323232;
+    border-radius: 8px;
+    font-size: 20px;
+    height: 30px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 10px;
+    width: 50%;
+}
+section div form .email-input {
+    background-color: #fff3de;
+    border: 2px solid #323232;
+    border-radius: 8px;
+    font-size: 20px;
+    height: 30px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 10px;
+    width: 50%;
+}
+section div form .message-input {
+    background-color: #fff3de;
+    border: 2px solid #323232;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 200px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 10px;
+    resize: none;
+    width: 50%;
+}
+section div form .submit-button {
+    background-color: initial;
+    border: 2px solid #323232;
+    border-radius: 4px;
+    color: #323232;
+    cursor: pointer;
+    font-size: 16px;
+    height: 45px;
+    width: 150px;
+}
+footer .social-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #323232;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: .1em;
+}
+footer .copyright-text {
+    color: #323232;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .1em;
+    text-align: center;
 }
