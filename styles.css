@@ -2,11 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #d6c5b3;
+    background-color: #fdfffe;
     color: #323232;
 }
 header {
-    height: 45px;
+    height: 50px;
 }
 header nav ul {
     display: flex;
@@ -16,17 +16,22 @@ header nav ul {
     list-style: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
+    font-size: 14px;
 }
 header nav ul li {
-    padding: 5%;
+    padding: 1%;
 }
 header a { 
     text-decoration: none;
     color: #323232;
 }
+header a:hover {
+    background-color: #525151;
+    color: #ddd;
+    padding: 10px;
+}
 section {
-    height: 100vh;
-    border: 1px solid grey;
+    padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,12 +48,6 @@ section {
     text-align: center;
     font-size: 5em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#about {
-    background-image: url(images/about-me-background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 .about-container h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
