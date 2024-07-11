@@ -49,13 +49,31 @@ section {
     font-size: 5em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.about-container h1 {
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.about-cointainer-image {
+    display: inline;
+    height: auto;
+    max-width: 100%;
+    padding-left: 100px;
+    float: left;
+}
+.about-container-text {
+    padding-left: 100px;
+    float: left;
+}
+.about-container-text h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 4em;
     letter-spacing: 10px;
     text-align: center;
 }
-.about-container p {
+.about-container-text p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 3px;
     font-size: 20px;
