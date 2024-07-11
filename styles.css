@@ -7,6 +7,7 @@ body {
 }
 header {
     height: 50px;
+    background-color: #333;
 }
 header nav ul {
     display: flex;
@@ -23,12 +24,12 @@ header nav ul li {
 }
 header a { 
     text-decoration: none;
-    color: #323232;
+    color: #ddd;
+    padding: 14px 16px;
 }
 header a:hover {
     background-color: #525151;
     color: #ddd;
-    padding: 10px;
 }
 section {
     padding: 100px;
@@ -85,7 +86,7 @@ section {
     text-align: center;
 }
 .column {
-    background-color: #525151;
+    background-color: #8d8d8d;
     color: #ddd;
     float: left;
     width: 15%;
