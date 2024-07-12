@@ -322,7 +322,7 @@ section {
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
 }  
-#contact {
+.contact-container {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -338,13 +338,14 @@ section {
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 2px;
     font-size: 16px;
+    padding: 5px;
+    text-align: center;
 }
 section div .form-container {
-    justify-content: center;
     width: 90%;
 }
 section div form .name-input {
-    background-color: #fff3de;
+    background-color: #fdfafa;
     border: 2px solid #323232;
     border-radius: 8px;
     font-size: 20px;
@@ -355,7 +356,7 @@ section div form .name-input {
     width: 50%;
 }
 section div form .email-input {
-    background-color: #fff3de;
+    background-color: #fdfafa;
     border: 2px solid #323232;
     border-radius: 8px;
     font-size: 20px;
@@ -366,7 +367,7 @@ section div form .email-input {
     width: 50%;
 }
 section div form .message-input {
-    background-color: #fff3de;
+    background-color: #fdfafa;
     border: 2px solid #323232;
     border-radius: 10px;
     font-size: 20px;
@@ -378,7 +379,7 @@ section div form .message-input {
     width: 50%;
 }
 section div form .submit-button {
-    background-color: initial;
+    background-color: #fdfafa;
     border: 2px solid #323232;
     border-radius: 4px;
     color: #323232;
@@ -394,7 +395,26 @@ footer .social-text {
     font-style: normal;
     font-weight: 500;
     letter-spacing: .1em;
+    text-align: center;
 }
+footer {
+    justify-content: center;
+}
+footer ul {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:#111110;
+    height: 1px;
+  }
 footer .copyright-text {
     color: #323232;
     font-size: 10px;
