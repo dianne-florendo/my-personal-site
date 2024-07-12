@@ -87,8 +87,8 @@
         </section>
         <section id="whereilive">
             <div class="whereilive">
-            <h1>THE PLACE I CALL HOME</h1>
-            <p>While I currently reside in the vibrant city of Madrid, Spain, my heart and roots are firmly planted in the beautiful Philippines, where family and community are the core of my identity.</p>
+                <h1>THE PLACE I CALL HOME</h1>
+                <p>While I currently reside in the vibrant city of Madrid, Spain, my heart and roots are firmly planted in the beautiful Philippines, where family and community are the core of my identity.</p>
                 <div class="whereilive-row">
                     <div class="whereilive-column">
                         <div class="whereilive-content">
@@ -122,18 +122,79 @@
             </div>
         </section>
         <section id="interests">
-            <div class="interests-container">
+            <div class="interests-carousel">
                 <h1>INTERESTS</h1>
                     <p>My interests reflect a deep appreciation for life’s simple yet profound pleasures. Cooking, traveling, eating, and basking in the sun are not just activities but essential parts of who I am. They allow me to connect with the world, nourish my body and soul, and cultivate a sense of happiness and fulfillment.</p>
-                <h2>A Culinary Enthusiast</h2>
-                    <p>Cooking is my creative outlet and a way to connect with my cultural roots. I love experimenting in the kitchen, blending traditional recipes with modern twists to create dishes that are both comforting and exciting. Whether it’s preparing a hearty Filipino feast or trying my hand at Mediterranean delicacies, cooking allows me to express my creativity and share joy with others through delicious food.</p>
-                <h2>A Passion for Travel</h2>
-                    <p>Traveling is more than just a hobby for me; it’s a way of life. I am driven by an insatiable curiosity to explore new destinations, immerse myself in different cultures, and discover the beauty of our world. From the bustling streets of Tokyo to the serene beaches of the Philippines, each journey enriches my perspective and fuels my love for adventure. Every trip is an opportunity to learn, grow, and collect memories that last a lifetime.</p>
-                <h2>A Food Lover’s Adventure</h2>
-                    <p>As a true food lover, I believe that eating is one of life’s greatest pleasures. I relish the opportunity to try new foods and savor flavors from around the globe. From street food in Asia to fine dining in Europe, I embrace the culinary experiences that each destination offers. For me, every meal is an adventure and a chance to connect with the local culture and people.</p>
-                <h2>Relaxing Under the Sun</h2>
-                    <p>There’s nothing quite like the feeling of warm sunshine on your skin and the gentle sound of waves lapping at the shore. I find immense joy in relaxing under the sun, whether it’s on a sandy beach, by a tranquil pool, or in a cozy garden. It’s my way of recharging and finding peace amidst the hustle and bustle of daily life. The sun’s warmth and light remind me of the importance of taking time to unwind and appreciate the simple, beautiful moments in life.</p>
+                <div class="carousel fade">
+                    <div class="number"><b>1 / 4</b></div>
+                    <img src="images/interest1.jpg" alt="cook" style="width: 100%;">
+                    <div class="texts">
+                        <h2>A Culinary Enthusiast</h2>
+                        <p>Cooking is my creative outlet and a way to connect with my cultural roots. I love experimenting in the kitchen, blending traditional recipes with modern twists to create dishes that are both comforting and exciting. Whether it’s preparing a hearty Filipino feast or trying my hand at Mediterranean delicacies, cooking allows me to express my creativity and share joy with others through delicious food.</p>
+                    </div>
+                </div>
+                <div class="carousel fade">
+                    <div class="number"><b>2 / 4</b></div>
+                    <img src="images/interest2.jpg" alt="travel" style="width: 100%;">
+                    <div class="texts">
+                        <h2>A Passion for Travel</h2>
+                        <p>Traveling is more than just a hobby for me; it’s a way of life. I am driven by an insatiable curiosity to explore new destinations, immerse myself in different cultures, and discover the beauty of our world. From the bustling streets of Tokyo to the serene beaches of the Philippines, each journey enriches my perspective and fuels my love for adventure. Every trip is an opportunity to learn, grow, and collect memories that last a lifetime.</p>
+                    </div>
+                </div>
+                <div class="carousel fade">
+                    <div class="number"><b>3 / 4</b></div>
+                    <img src="images/interest3.jpg" alt="foodie" style="width: 100%;">
+                    <div class="texts">
+                        <h2>A Food Lover’s Adventure</h2>
+                        <p>As a true food lover, I believe that eating is one of life’s greatest pleasures. I relish the opportunity to try new foods and savor flavors from around the globe. From street food in Asia to fine dining in Europe, I embrace the culinary experiences that each destination offers. For me, every meal is an adventure and a chance to connect with the local culture and people.</p>
+                    </div>
+                </div>
+                <div class="carousel fade">
+                    <div class="number"><b>4 / 4</b></div>
+                    <img src="images/interest4.jpg" alt="relax" style="width: 100%;">
+                    <div class="texts">
+                        <h2>Relaxing Under the Sun</h2>
+                        <p>There’s nothing quite like the feeling of warm sunshine on your skin and the gentle sound of waves lapping at the shore. I find immense joy in relaxing under the sun, whether it’s on a sandy beach, by a tranquil pool, or in a cozy garden. It’s my way of recharging and finding peace amidst the hustle and bustle of daily life. The sun’s warmth and light remind me of the importance of taking time to unwind and appreciate the simple, beautiful moments in life.</p>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
             </div>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("carousel");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+            </script>                
         </section>
         <section id="contact">
             <div class="contact-container">
