@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #fdfffe;
+    background-color: #f1f1f1;
     color: #323232;
     @media screen and (max-width: 700px) {
         img {width: 200px}
@@ -88,6 +88,20 @@ section {
     letter-spacing: 10px;
     text-align: center;
 }
+@media screen and (min-width: 1161px) {
+    div.core-column {
+      font-size: 1.5em;
+    }
+}
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1160px) {
+    div.core-column {
+      font-size: 0.7em;
+    }
+}
+.row {
+    display: flex;
+}
 .core-column {
     background-color: #8d8d8d;
     color: #ddd;
@@ -101,6 +115,7 @@ section {
     font-size: 1.5em;
     font-style: normal;
     margin: 30px;
+    display: table-cell;
 }
 .core-containerTab {
     padding: 20px;
@@ -122,7 +137,6 @@ section {
     display: table;
     clear: both;
   }
-  
   /* Closable button inside the image */
   .closebtn {
     float: right;
@@ -130,21 +144,73 @@ section {
     font-size: 35px;
     cursor: pointer;
   }
-.whereilive-container h1 {
+.whereilive {
+    max-width: 1500px;
+    margin: auto;
+}
+.whereilive h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 4em;
     letter-spacing: 10px;
     text-align: center;
 }
-.whereilive-container h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5em;
-    letter-spacing: 2px;
-}
-.whereilive-container p {
+.whereilive p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 2px;
     font-size: 16px;
+    text-align: center;
+}
+.whereilive-row {
+    margin: 8px -16px;
+    display: flex;
+}
+/* Add padding BETWEEN each column */
+.whereilive-row,
+.whereilive-row > .whereilive-column {
+  padding: 8px;
+}
+/* Create four equal columns that floats next to each other */
+.whereilive-column {
+    float: left;
+    width: 23.5%;
+    display: table;
+}
+  /* Clear floats after rows */ 
+.whereilive-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Content */
+.whereilive-content {
+    background-color: white;
+    padding: 10px;
+    display: table-cell;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .whereilive-column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .whereilive-column {
+      width: 100%;
+    }
+  }
+.whereilive-content h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25em;
+    letter-spacing: 1.5px;
+}
+.whereilive-content p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-align: justify;
 }
 .interests-container h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
