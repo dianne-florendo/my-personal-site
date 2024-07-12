@@ -41,6 +41,10 @@ A section with a contact form and links to connect with me on LinkedIn, Facebook
 - **HTML**: Structuring the content of the web pages.
 - **CSS**: Styling the website to make it visually appealing.
 
+## How to View the Site
+To view the site, simply open the following link:
+https://dianne-florendo.github.io/my-personal-site/
+
 ## Contact
 If you have any questions, suggestions, or just want to say hi, feel free to contact me using the information provided on the site.
 
