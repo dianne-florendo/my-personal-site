@@ -76,6 +76,11 @@ section {
     align-items: center;
     flex-direction: column;
 }
+@media screen and (max-width:700px) {
+    section {
+        padding: 20px;
+    }
+}
 .intro-container img {
     display: block;
     margin-left: auto;
