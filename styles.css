@@ -4,9 +4,9 @@ html {
 body {
     background-color: #f1f1f1;
     color: #323232;
-    @media screen and (max-width: 700px) {
-        img {width: 200px}
-    }
+}
+@media screen and (max-width: 700px) {
+    img {width: 200px}
 }
 header {
     height: 50px;
@@ -88,13 +88,13 @@ section {
     letter-spacing: 10px;
     text-align: center;
 }
-@media screen and (min-width: 1161px) {
+@media screen and (min-width: 1284px) {
     div.core-column {
       font-size: 1.5em;
     }
 }
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1284px) {
     div.core-column {
       font-size: 0.7em;
     }
@@ -136,14 +136,14 @@ section {
     content: "";
     display: table;
     clear: both;
-  }
+}
   /* Closable button inside the image */
   .closebtn {
     float: right;
     color: white;
     font-size: 35px;
     cursor: pointer;
-  }
+}
 .whereilive {
     max-width: 1500px;
     margin: auto;
@@ -165,8 +165,7 @@ section {
     display: flex;
 }
 /* Add padding BETWEEN each column */
-.whereilive-row,
-.whereilive-row > .whereilive-column {
+.whereilive-row, .whereilive-row > .whereilive-column {
   padding: 8px;
 }
 /* Create four equal columns that floats next to each other */
@@ -189,18 +188,19 @@ section {
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .whereilive-column {
       width: 50%;
     }
-  }
+}
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .whereilive-column {
       width: 100%;
     }
-  }
+}
+
 .whereilive-content h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.25em;
@@ -214,7 +214,7 @@ section {
 }
 * {
     box-sizing: border-box;
-  }
+}
 #interests {
     padding: 20px;
 }
@@ -407,6 +407,9 @@ footer ul {
     align-items: center;
     list-style: none;
 }
+@media screen and (max-width: 700px) {
+    footer ul li img {width: 24px}
+}
 hr {
     border: 0;
     clear:both;
@@ -414,7 +417,7 @@ hr {
     width: 96%;               
     background-color:#111110;
     height: 1px;
-  }
+}
 footer .copyright-text {
     color: #323232;
     font-size: 10px;
