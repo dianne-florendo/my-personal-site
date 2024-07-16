@@ -36,6 +36,27 @@ header a:hover {
     background-color: #525151;
     color: #ddd;
 }
+/* Header Media queries for responsiveness */
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        padding: 10px;
+    }
+
+    header a {
+        padding: 3px;
+        font-size: 10px;
+    }
+}
 section {
     padding: 100px;
     display: flex;
