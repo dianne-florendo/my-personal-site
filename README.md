@@ -19,8 +19,14 @@ This site is designed to give visitors a comprehensive view of my personal and p
 - **Interactive Elements**: Contact form for easy communication. (Linking to my email: Future Implementation)
 
 ## Technologies Used
-- **HTML**: Structuring the content of the web pages.
+- **HTML**: Structuring the content of the web page.
 - **CSS**: Styling the website to make it visually appealing.
+
+## Tools Used
+  - [W3 Validator](https://validator.w3.org/): This tool helped ensure my HTML code was free of errors and adhered to web standards.
+  - [W3Schools](https://www.w3schools.com/): I used this website to learn and reference CSS and HTML concepts during development.
+  - [Photopea](https://www.photopea.com/): I utilized this online image editor for creating and editing graphics used on the site.
+  - [Visual Studio Code](https://code.visualstudio.com/): This code editor provided a powerful and user-friendly environment for writing and managing my CSS and HTML code.
 
 ## How to View the Site
 To view the site, simply open the following link:
