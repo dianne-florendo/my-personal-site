@@ -6,6 +6,7 @@ Welcome to my personal site! This static website provides an introduction to who
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Tools Used](#tools-used)
 - [How to View the Site](#how-to-view-the-site)
 - [Sections](#sections)
 - [Contact](#contact)
