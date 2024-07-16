@@ -1,18 +1,19 @@
 html {
     scroll-behavior: smooth;
 }
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: #f1f1f1;
     color: #323232;
     margin: 0;
     padding: 0;
 }
-@media screen and (max-width: 700px) {
-    img {width: 200px}
-}
 header {
-    height: 50px;
+    height: auto;
     background-color: #333;
+    margin: 0 auto;
 }
 header nav ul {
     display: flex;
@@ -31,7 +32,7 @@ header nav ul li {
 header a { 
     text-decoration: none;
     color: #ddd;
-    padding: 14px 16px;
+    padding: 10px 16px;
 }
 header a:hover {
     background-color: #525151;
@@ -42,7 +43,7 @@ header a:hover {
     margin: 5px;
 }
 /* Header Media queries for responsiveness */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     header {
         height: auto;
         padding: 10px 0;
@@ -97,12 +98,20 @@ section {
     padding: 20px;
     flex-direction: row;
 }
+@media screen and (max-width:760px) {
+    #about {
+        flex-direction: column;
+    }
+}
 .about-cointainer-image {
     display: inline;
     height: auto;
     max-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+}
+@media screen and (max-width: 700px) {
+    img {width: 200px}
 }
 .about-container-text {
     padding: 20px;
@@ -277,9 +286,6 @@ section {
     font-size: 12px;
     text-align: justify;
 }
-* {
-    box-sizing: border-box;
-}
 #interests {
     padding: 20px;
 }
@@ -318,6 +324,12 @@ section {
     letter-spacing: 2px;
     text-align: center;
 }
+@media screen and (max-width: 700px) {
+    .interests-carousel h2 {
+        font-size: 1em;
+        letter-spacing: 2px;
+    }
+}
 .carousel {
     display: none;
     position: relative;
@@ -341,6 +353,16 @@ section {
     width: 100%; /* Full width */
     padding: 20px; /* Some padding */
 }
+@media screen and (max-width: 700px) {
+    .carousel .texts p {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .carousel .texts p {
+        display: none;
+    }
+}
 .number {
     color: #f2f2f2;
     font-size: 16px;
@@ -348,6 +370,12 @@ section {
     position: absolute;
     top: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width: 700px) {
+    .number {
+        font-size: 10px;
+        padding: 4px 20px;
+    }
 }
 /* Next & previous buttons */
 .prev, .next {
@@ -363,6 +391,12 @@ section {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+}
+@media screen and (max-width: 700px) {
+    .prev, .next {
+        font-size: 20px;
+        padding: 10px;
+    }
 }
   /* Position the "next button" to the right */
 .next {
@@ -477,6 +511,15 @@ section div form .submit-button {
     height: 45px;
     width: 150px;
 }
+@media screen and (max-width: 700px) {
+    section div form .submit-button, 
+    section div form .message-input, 
+    section div form .name-input, 
+    section div form .email-input
+    {
+        font-size: 12px;
+    }
+}
 footer .social-text {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #323232;
@@ -533,7 +576,6 @@ footer .copyright-text {
     footer ul li img {
         width: 24px;
     }
-
     footer .social-text,
     footer .copyright-text {
         font-size: 10px;
